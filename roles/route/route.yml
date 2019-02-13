@@ -1,0 +1,6 @@
+---
+# tasks file for updates route
+- hosts: XF200X4B
+  vars:
+  roles:
+    - ../route 

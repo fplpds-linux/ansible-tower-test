@@ -1,0 +1,11 @@
+---
+# tasks file for route
+- name: configure route file
+  template:
+    src: /home/ansible/playbooks/roles/route/templates/route-{{ ansible_default_ipv4.alias }}.j2
+    dest: /etc/sysconfig/network-scripts/route-{{ ansible_default_ipv4.alias }}
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - restart network

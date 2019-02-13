@@ -1,0 +1,9 @@
+---
+- name: "Install static route"
+  hosts: XF200X4B
+  become: yes
+  become_method: sudo
+  
+  roles:
+    - { role: route, tags: route }
+

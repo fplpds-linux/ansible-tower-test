@@ -1,0 +1,6 @@
+---
+# handlers file for route
+- name: restart network
+  service: 
+    name: network
+    state: restarted

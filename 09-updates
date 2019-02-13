@@ -1,8 +1,0 @@
----
-- name: "Install updates security patch"
-  hosts: all
-  become: yes
-  become_method: sudo
-
-  roles:
-    - { role: updates, tags: update }
